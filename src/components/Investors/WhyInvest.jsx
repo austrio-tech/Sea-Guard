@@ -39,7 +39,7 @@ const WhyInvest = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className="mono text-green">// COLLABORATION</span>
+          <span className="mono text-green">{"// COLLABORATION"}</span>
           <h3>What We’re Looking For</h3>
           <div className="looking-grid">
             {lookingFor.map((item, i) => (

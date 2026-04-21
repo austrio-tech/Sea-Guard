@@ -11,7 +11,7 @@ const SolutionHero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
-          // THE SEAGUARD ADVANTAGE
+          {"// THE SEAGUARD ADVANTAGE"}
         </motion.span>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}

@@ -13,7 +13,7 @@ const WhyItMatters = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <span className="mono text-green">// STRATEGIC IMPACT</span>
+          <span className="mono text-green">{"// STRATEGIC IMPACT"}</span>
           <h2>Why It Matters</h2>
           <p>
             Traditional maritime operations are costly, limited in coverage, and dependent on 

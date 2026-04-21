@@ -11,7 +11,7 @@ const InvestorsHero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
-          // STRATEGIC PARTNERSHIPS
+          {"// STRATEGIC PARTNERSHIPS"}
         </motion.span>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}

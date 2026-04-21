@@ -14,7 +14,7 @@ const AboutUs = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className="mono text-green">// OUR IDENTITY</span>
+          <span className="mono text-green">{"// OUR IDENTITY"}</span>
           <h2>About Seaguard</h2>
         </motion.div>
 
@@ -67,7 +67,7 @@ const AboutUs = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            // CORE VALUES
+            {"// CORE VALUES"}
           </motion.h4>
           <div className="values-list">
             {coreValues.map((value, index) => (

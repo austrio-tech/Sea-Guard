@@ -24,7 +24,7 @@ const Highlights = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="mono text-green">// SYSTEM ADVANTAGES</span>
+            <span className="mono text-green">{"// SYSTEM ADVANTAGES"}</span>
             <h2>Key Highlights</h2>
           </motion.div>
 

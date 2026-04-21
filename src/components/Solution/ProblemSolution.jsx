@@ -17,7 +17,7 @@ const ProblemSolution = () => {
             viewport={{ once: true }}
           >
             <div className="ps-header">
-              <span className="mono">// ANALYSIS</span>
+              <span className="mono">{"// ANALYSIS"}</span>
               <h3>The Problem</h3>
             </div>
             <ul className="ps-list">
@@ -34,7 +34,7 @@ const ProblemSolution = () => {
             viewport={{ once: true }}
           >
             <div className="ps-header">
-              <span className="mono text-green">// INNOVATION</span>
+              <span className="mono text-green">{"// INNOVATION"}</span>
               <h3 className="text-green">The Solution</h3>
             </div>
             <ul className="ps-list">

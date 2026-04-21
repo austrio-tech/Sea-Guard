@@ -19,7 +19,7 @@ const FutureVision = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className="mono text-green">// STRATEGIC ROADMAP</span>
+          <span className="mono text-green">{"// STRATEGIC ROADMAP"}</span>
           <h2>Future Vision</h2>
         </motion.div>
 

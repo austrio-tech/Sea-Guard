@@ -23,7 +23,7 @@ const Technology = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="mono text-green">// SYSTEM SPECS</span>
+            <span className="mono text-green">{"// SYSTEM SPECS"}</span>
             <h2>SEAGUARD System</h2>
             <div className="specs-grid">
               {techSpecs.map((spec, i) => (
@@ -44,7 +44,7 @@ const Technology = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="mono text-green">// OPERATIONAL RANGE</span>
+            <span className="mono text-green">{"// OPERATIONAL RANGE"}</span>
             <h2>Capabilities</h2>
             <div className="cap-list">
               {capabilities.map((cap, i) => (

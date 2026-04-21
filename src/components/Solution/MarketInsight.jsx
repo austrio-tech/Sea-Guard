@@ -20,7 +20,7 @@ const MarketInsight = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <span className="mono text-green">// MARKET DYNAMICS</span>
+            <span className="mono text-green">{"// MARKET DYNAMICS"}</span>
             <h2>Market Insight & Opportunity</h2>
             <p className="market-intro">
               A rapidly growing global maritime technology market worth billions. 

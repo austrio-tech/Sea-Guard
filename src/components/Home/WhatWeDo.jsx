@@ -13,7 +13,7 @@ const WhatWeDo = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <span className="mono text-green">// CORE MISSION</span>
+          <span className="mono text-green">{"// CORE MISSION"}</span>
           <h2>What We Do</h2>
           <p>
             Seaguard Marine Systems develops intelligent unmanned surface systems designed to 

@@ -27,13 +27,13 @@ const ContactSection = () => {
 
     const payload = {
       ...formData,
-      service: "gmail",
-      sourcetype: "contact",
-      from: "seaguard",
-      to: "SEAGUARD"
+      service: process.env.REACT_APP_PAYLOAD_SERVICE || "gmail",
+      sourcetype: process.env.REACT_APP_PAYLOAD_SOURCETYPE || "contact",
+      from: process.env.REACT_APP_PAYLOAD_FROM || "seaguard",
+      to: process.env.REACT_APP_PAYLOAD_TO || "SEAGUARD"
     };
 
-    const API = 'https://backend-service-ino.onrender.com/api/email/send_web_contact';
+    const API = process.env.REACT_APP_API_URL;
     try {
       const response = await fetch(API, {
         method: 'POST',
@@ -62,7 +62,7 @@ const ContactSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="mono text-green">// ESTABLISH CONTACT</span>
+            <span className="mono text-green">{"// ESTABLISH CONTACT"}</span>
             <h2>Get In Touch</h2>
             
             <div className="info-items">

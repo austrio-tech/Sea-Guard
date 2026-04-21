@@ -13,7 +13,7 @@ const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          // OPERATIONAL EXCELLENCE
+          {"// OPERATIONAL EXCELLENCE"}
         </motion.div>
         <motion.h1 
           initial={{ opacity: 0, y: 30 }}

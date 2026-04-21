@@ -1,7 +1,7 @@
-import React, { useRef, Suspense } from 'react';
-import { Canvas, useFrame, useLoader } from '@react-three/fiber';
+import React, { Suspense } from 'react'; //useRef
+import { Canvas, useLoader } from '@react-three/fiber'; //useFrame
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
-import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader';
+// import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader';
 import { OrbitControls, Stage, PerspectiveCamera, Html } from '@react-three/drei';
 import * as THREE from 'three';
 
@@ -62,7 +62,7 @@ const Model = () => {
   obj.traverse((child) => {
     if (child.isMesh) {
       child.material = new THREE.MeshStandardMaterial({
-        color: 'orange',
+        color: '#444444',
       });
     }
   });

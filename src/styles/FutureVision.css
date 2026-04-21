@@ -1,0 +1,81 @@
+.future-vision {
+  padding: 10rem 5%;
+  background-color: var(--navy-dark);
+}
+
+.vision-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.roadmap-timeline {
+  margin-top: 6rem;
+  position: relative;
+}
+
+.roadmap-item {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.roadmap-item:last-child {
+  margin-bottom: 0;
+}
+
+.roadmap-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.node-circle {
+  width: 24px;
+  height: 24px;
+  background: var(--green-neon);
+  box-shadow: 0 0 15px var(--green-neon);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.node-line {
+  width: 2px;
+  flex: 1;
+  background: rgba(1, 255, 112, 0.2);
+  margin-top: 10px;
+}
+
+.roadmap-item:last-child .node-line {
+  display: none;
+}
+
+.roadmap-content {
+  padding-bottom: 4rem;
+}
+
+.phase {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.roadmap-content h4 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  color: var(--text-primary);
+}
+
+.roadmap-content p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .roadmap-item {
+    gap: 2rem;
+  }
+}

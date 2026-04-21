@@ -3,13 +3,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5%;
-  background-color: #001f3f; /* Navy Blue */
-  color: white;
+  background-color: rgba(0, 8, 20, 0.9);
+  backdrop-filter: blur(10px);
+  color: var(--text-primary);
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid var(--navy-light);
   box-sizing: border-box;
 }
 
@@ -19,39 +22,64 @@
 }
 
 .navbar-logo img {
-  height: 50px;
-  margin-right: 10px;
+  height: 45px;
+  filter: drop-shadow(0 0 5px rgba(1, 255, 112, 0.2));
 }
 
 .navbar-links {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .navbar-links a {
-  color: white;
+  color: var(--text-secondary);
   text-decoration: none;
-  font-weight: 500;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.1rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: color 0.3s ease;
+  letter-spacing: 1.5px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--green-neon);
+  transition: width 0.3s ease;
 }
 
 .navbar-links a:hover {
-  color: #01FF70; /* Contrast Green */
+  color: var(--green-neon);
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
 }
 
 .navbar-cta {
-  background-color: #01FF70;
-  color: #001f3f;
-  padding: 0.5rem 1.5rem;
-  border-radius: 4px;
-  font-weight: bold;
+  background-color: transparent;
+  color: var(--green-neon);
+  padding: 0.6rem 1.8rem;
+  border: 1px solid var(--green-neon);
+  font-family: var(--font-mono);
+  font-weight: 500;
   text-decoration: none;
-  transition: transform 0.2s ease, background-color 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
 }
 
 .navbar-cta:hover {
-  background-color: #2ecc40;
+  background-color: var(--green-neon);
+  color: var(--navy-dark);
+  box-shadow: 0 0 15px var(--green-neon);
   transform: translateY(-2px);
 }

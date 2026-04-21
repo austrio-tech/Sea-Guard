@@ -1,0 +1,89 @@
+.highlights {
+  padding: 10rem 5%;
+  background-color: var(--navy-dark);
+  position: relative;
+}
+
+.highlights-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.highlights-left {
+  position: relative;
+  height: 600px;
+}
+
+.boat-canvas-container {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+}
+
+.highlights-right .section-header {
+  margin-bottom: 4rem;
+}
+
+.highlights-right h2 {
+  font-size: 3.5rem;
+  margin-top: 1rem;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.highlight-card {
+  background: rgba(0, 53, 102, 0.2);
+  padding: 2rem;
+  border-left: 2px solid var(--navy-light);
+  transition: all 0.3s ease;
+}
+
+.highlight-card:hover {
+  background: rgba(0, 53, 102, 0.4);
+  border-left-color: var(--green-neon);
+  transform: translateY(-5px);
+}
+
+.highlight-value {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.highlight-title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.highlight-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.text-green {
+  color: var(--green-neon);
+}
+
+@media (max-width: 1024px) {
+  .highlights-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .highlights-left {
+    height: 400px;
+  }
+}

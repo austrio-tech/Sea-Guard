@@ -1,0 +1,25 @@
+.solution-hero {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(180deg, var(--navy-dark) 0%, var(--navy-blue) 100%);
+  padding: 0 5%;
+  padding-top: 80px;
+}
+
+.solution-hero-content {
+  max-width: 900px;
+}
+
+.solution-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  margin: 1.5rem 0 2rem;
+}
+
+.solution-hero p {
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}

@@ -1,0 +1,146 @@
+.problem-solution {
+  padding: 8rem 5%;
+  background-color: var(--navy-dark);
+}
+
+.ps-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ps-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 8rem;
+}
+
+.ps-card {
+  padding: 4rem;
+  background: rgba(0, 53, 102, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+
+.ps-card.problem {
+  border-left: 4px solid #ff4d4d;
+}
+
+.ps-card.solution {
+  border-left: 4px solid var(--green-neon);
+  background: rgba(1, 255, 112, 0.05);
+}
+
+.ps-header {
+  margin-bottom: 2.5rem;
+}
+
+.ps-header span {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+
+.ps-header h3 {
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.ps-list {
+  list-style: none;
+  padding: 0;
+}
+
+.ps-list li {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ps-list li::before {
+  content: '—';
+  opacity: 0.5;
+}
+
+.how-it-works {
+  text-align: center;
+}
+
+.how-it-works h4 {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.process-flow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.step {
+  flex: 1;
+  background: rgba(0, 53, 102, 0.2);
+  padding: 3rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.step-num {
+  display: block;
+  font-family: var(--font-mono);
+  color: var(--green-neon);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.step p {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.connector {
+  width: 50px;
+  height: 2px;
+  background: var(--navy-light);
+  position: relative;
+}
+
+.connector::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 6px solid transparent;
+  border-left-color: var(--navy-light);
+}
+
+@media (max-width: 968px) {
+  .ps-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .process-flow {
+    flex-direction: column;
+  }
+  
+  .connector {
+    width: 2px;
+    height: 30px;
+  }
+  
+  .connector::after {
+    right: 50%;
+    bottom: 0;
+    top: auto;
+    transform: translateX(50%);
+    border-left-color: transparent;
+    border-top-color: var(--navy-light);
+  }
+}

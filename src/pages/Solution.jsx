@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, Zap, Target, BarChart3, Globe } from 'lucide-react';
+import { Shield, Zap, Target } from 'lucide-react';
 import '../styles/Solution.css';
 
 const Solution = () => {

@@ -18,7 +18,9 @@ const Model = () => {
   const objPath = '/boat_Obj/d2939d7c91aa61ab7e5a9d36a6416243.obj';
   const mtlPath = '/boat_Obj/material.mtl';
   
-  const materials = useLoader(MTLLoader, mtlPath);
+  const materials = useLoader(MTLLoader, mtlPath, (loader) => {
+    loader.setResourcePath('/boat_Obj/');
+  });
   const obj = useLoader(OBJLoader, objPath, (loader) => {
     materials.preload();
     loader.setMaterials(materials);

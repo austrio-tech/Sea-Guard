@@ -1,0 +1,85 @@
+.why-invest {
+  padding: 10rem 5%;
+  background-color: var(--navy-dark);
+}
+
+.invest-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 10rem;
+}
+
+.reason-card {
+  padding: 3rem 2.5rem;
+  background: rgba(0, 53, 102, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.reason-card:hover {
+  border-color: var(--green-neon);
+  transform: translateY(-5px);
+}
+
+.reason-icon {
+  margin-bottom: 2rem;
+}
+
+.reason-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.reason-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.looking-for-section {
+  text-align: center;
+  background: rgba(1, 255, 112, 0.03);
+  padding: 6rem;
+  border: 1px solid rgba(1, 255, 112, 0.1);
+}
+
+.looking-for-section h3 {
+  font-size: 3rem;
+  margin: 1.5rem 0 4rem;
+}
+
+.looking-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.looking-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+  .looking-for-section {
+    padding: 3rem 1rem;
+  }
+  
+  .looking-grid {
+    gap: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20%;
+  }
+}

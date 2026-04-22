@@ -16,6 +16,16 @@ const WhyInvest = () => {
   return (
     <section className="why-invest">
       <div className="invest-container">
+        <motion.div 
+          className="section-header centered"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <span className="mono text-green">{"// STRATEGIC VALUE"}</span>
+          <h2>Why Invest With Us</h2>
+        </motion.div>
+
         <div className="reasons-grid">
           {reasons.map((reason, i) => (
             <motion.div 

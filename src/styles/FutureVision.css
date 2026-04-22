@@ -75,7 +75,33 @@
 }
 
 @media (max-width: 768px) {
+  .future-vision {
+    padding: 6rem 8%;
+  }
+
+  .vision-container h2 {
+    font-size: 2.2rem;
+  }
+
+  .roadmap-timeline {
+    margin-top: 3rem;
+  }
+
   .roadmap-item {
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+
+  .roadmap-content h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .roadmap-content p {
+    font-size: 1rem;
+  }
+
+  .node-circle {
+    width: 16px;
+    height: 16px;
   }
 }

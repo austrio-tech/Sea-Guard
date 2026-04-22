@@ -53,7 +53,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
       <div className="contact-container">
         <div className="contact-grid">
           <motion.div 

@@ -74,8 +74,27 @@
 }
 
 @media (max-width: 1024px) {
+  .technology {
+    padding: 6rem 8%;
+  }
+
   .tech-grid {
     grid-template-columns: 1fr;
-    gap: 5rem;
+    gap: 4rem;
+  }
+
+  .tech-content h2, .cap-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .specs-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cap-item {
+    font-size: 1.1rem;
+    padding: 1.2rem 1.5rem;
   }
 }

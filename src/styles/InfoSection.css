@@ -59,3 +59,22 @@
 .text-green {
   color: var(--green-neon);
 }
+
+@media (max-width: 768px) {
+  .info-section {
+    padding: 6rem 8%;
+  }
+
+  .info-box {
+    padding: 3rem 1.5rem;
+  }
+
+  .info-box h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .info-box p {
+    font-size: 1.1rem;
+  }
+}

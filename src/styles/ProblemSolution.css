@@ -122,22 +122,52 @@
 }
 
 @media (max-width: 968px) {
+  .problem-solution {
+    padding: 6rem 8%;
+  }
+
   .ps-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .ps-card {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .ps-header h3 {
+    font-size: 1.8rem;
+  }
+
+  .ps-list li {
+    font-size: 1.1rem;
+  }
+
+  .how-it-works h4 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
   
   .process-flow {
     flex-direction: column;
+    gap: 1rem;
   }
   
+  .step {
+    padding: 2rem 1.5rem;
+    width: 100%;
+  }
+
   .connector {
     width: 2px;
     height: 30px;
+    margin: 0 auto;
   }
   
   .connector::after {
     right: 50%;
-    bottom: 0;
+    bottom: -6px;
     top: auto;
     transform: translateX(50%);
     border-left-color: transparent;

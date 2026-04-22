@@ -120,7 +120,25 @@
 }
 
 @media (max-width: 768px) {
+  .market-insight {
+    padding: 6rem 8%;
+  }
+
+  .market-header h2 {
+    font-size: 2.2rem;
+  }
+
   .market-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .market-section-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .advantages-section h4 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
   }
 }

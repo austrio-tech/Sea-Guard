@@ -22,7 +22,7 @@ const NotFound = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          <span className="mono text-green">// SYSTEM ERROR</span>
+          <span className="mono text-green">{"// SYSTEM ERROR"}</span>
           <h2>Coordinates Not Found</h2>
           <p>The maritime zone you are trying to access is outside our operational perimeter.</p>
           

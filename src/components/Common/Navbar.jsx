@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-logo">
         <Link to="/" onClick={closeMenu}>
-          <img src="/Logo.svg" alt="Seaguard Logo" />
+          <img src="/logo_white.svg" alt="Sea Guard Logo" />
         </Link>
       </div>
 
@@ -21,10 +21,10 @@ const Navbar = () => {
         <Link to="/" onClick={closeMenu}>Home</Link>
         <Link to="/solution" onClick={closeMenu}>Solution</Link>
         <Link to="/investors" onClick={closeMenu}>Investors</Link>
-        <Link to="/investors" className="mobile-cta" onClick={closeMenu}>Contact Us</Link>
+        <Link to="/investors#contact" className="mobile-cta" onClick={closeMenu}>Contact Us</Link>
       </div>
 
-      <Link to="/investors" className="navbar-cta desktop-only">Contact Us</Link>
+      <Link to="/investors#contact" className="navbar-cta desktop-only">Contact Us</Link>
 
       <button className="mobile-toggle" onClick={toggleMenu}>
         {isOpen ? <X color="var(--green-neon)" /> : <Menu color="var(--green-neon)" />}

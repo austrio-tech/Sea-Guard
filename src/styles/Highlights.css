@@ -84,11 +84,29 @@
 }
 
 @media (max-width: 1024px) {
+  .highlights {
+    padding: 6rem 8%;
+  }
+
   .highlights-container {
     grid-template-columns: 1fr;
+    gap: 3rem;
   }
   
   .highlights-left {
-    height: 400px;
+    height: 350px;
+    order: 1;
+  }
+
+  .highlights-right {
+    order: 2;
+  }
+
+  .highlights-right h2 {
+    font-size: 2.5rem;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
   }
 }

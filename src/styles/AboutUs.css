@@ -114,11 +114,41 @@
 }
 
 @media (max-width: 968px) {
+  .about-us {
+    padding: 6rem 8%;
+  }
+
+  .centered {
+    margin-bottom: 3rem;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .values-list {
     gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .about-main-card {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .about-main-card h3 {
+    font-size: 1.8rem;
+  }
+
+  .about-main-card p {
+    font-size: 1.1rem;
+  }
+
+  .about-sub-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .values-list {
+    gap: 2.5rem;
+  }
+
+  .value-text {
+    font-size: 1.2rem;
   }
 }

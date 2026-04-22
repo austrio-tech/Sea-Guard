@@ -126,16 +126,29 @@ input:focus, textarea:focus {
 }
 
 @media (max-width: 968px) {
+  .contact-section {
+    padding: 6rem 8%;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 4rem;
   }
   
+  .contact-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .info-item .value {
+    font-size: 1.1rem;
+  }
+
   .form-row {
     grid-template-columns: 1fr;
   }
   
   .contact-form {
-    padding: 2rem;
+    padding: 2.5rem 1.5rem;
   }
 }

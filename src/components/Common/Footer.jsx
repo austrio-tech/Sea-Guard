@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section footer-logo">
-          <img src="/Logo.svg" alt="Seaguard Logo" />
+          <img src="/Logo_white.svg" alt="Seaguard Logo" />
           <p>Redefining Maritime Intelligence with autonomous systems.</p>
         </div>
         <div className="footer-section">

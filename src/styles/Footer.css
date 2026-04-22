@@ -87,8 +87,25 @@
 }
 
 @media (max-width: 968px) {
+  .footer {
+    padding: 4rem 8% 2rem;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
     gap: 3rem;
+    text-align: center;
+  }
+
+  .footer-section h3 {
+    justify-content: center;
+  }
+
+  .footer-logo img {
+    height: 60px;
+  }
+
+  .footer-logo p {
+    margin: 0 auto;
   }
 }

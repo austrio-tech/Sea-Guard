@@ -138,3 +138,41 @@
   0% { transform: translate(-50%, 0); opacity: 1; }
   100% { transform: translate(-50%, 15px); opacity: 0; }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 8%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .hero-scroll-indicator {
+    display: none;
+  }
+}

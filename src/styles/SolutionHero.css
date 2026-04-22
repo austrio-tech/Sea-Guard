@@ -23,3 +23,18 @@
   color: var(--text-secondary);
   line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+  .solution-hero {
+    height: auto;
+    padding: 120px 8% 60px;
+  }
+
+  .solution-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .solution-hero p {
+    font-size: 1.1rem;
+  }
+}

@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Navbar from './components/Common/Navbar';
 import Footer from './components/Common/Footer';
 import ScrollToTop from './components/Common/ScrollToTop';
@@ -12,6 +14,8 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <SpeedInsights />
+        <Analytics />
         <ScrollToTop />
         <Navbar />
         <main>
